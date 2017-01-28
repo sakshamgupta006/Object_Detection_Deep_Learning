@@ -1,0 +1,2 @@
+model_checkpoint_path: "bird-classifier.tfl"
+all_model_checkpoint_paths: "bird-classifier.tfl"

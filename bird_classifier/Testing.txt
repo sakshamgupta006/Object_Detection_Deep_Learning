@@ -1,0 +1,369 @@
+obolab@robolab:~/Downloads$ cd bird_classifier/
+robolab@robolab:~/Downloads/bird_classifier$ sudo python bird_classifier.py 
+[sudo] password for robolab: 
+robolab@robolab:~/Downloads/bird_classifier$ python bird_classifier.py 
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: Tesla K40c
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:03:00.0
+Total memory: 11.25GiB
+Free memory: 11.15GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x38bdd10
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 1 with properties: 
+name: Quadro K4200
+major: 3 minor: 0 memoryClockRate (GHz) 0.784
+pciBusID 0000:82:00.0
+Total memory: 4.00GiB
+Free memory: 3.59GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 0 to device ordinal 1
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:59] cannot enable peer access from device ordinal 1 to device ordinal 0
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y N 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 1:   N Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:838] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40c, pci bus id: 0000:03:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:826] Ignoring gpu device (device: 1, name: Quadro K4200, pci bus id: 0000:82:00.0) with Cuda multiprocessor count: 7. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:838] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40c, pci bus id: 0000:03:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:826] Ignoring gpu device (device: 1, name: Quadro K4200, pci bus id: 0000:82:00.0) with Cuda multiprocessor count: 7. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+---------------------------------
+Run id: bird-classifier
+Log directory: /tmp/tflearn_logs/
+---------------------------------
+Preprocessing... Calculating mean over all dataset (this may take long)...
+Mean: 0.472978413436 (To avoid repetitive computation, add it to argument 'mean' of `add_featurewise_zero_center`)
+---------------------------------
+Preprocessing... Calculating std over all dataset (this may take long)...
+STD: 0.248771212446 (To avoid repetitive computation, add it to argument 'std' of `add_featurewise_stdnorm`)
+---------------------------------
+Training samples: 56780
+Validation samples: 15000
+--
+Training Step: 592  | total loss: 0.38097
+| Adam | epoch: 001 | loss: 0.38097 - acc: 0.8294 | val_loss: 0.39949 - val_acc: 0.8260 -- iter: 56780/56780
+--
+Training Step: 1184  | total loss: 0.35218
+Training Step: 1184  | total loss: 0.35218 0.8524 | val_loss: 0.33841 - val_acc:| Adam | epoch: 002 | loss: 0.35218 - acc: 0.8524 | val_loss: 0.33841 - val_acc: 0.8551 -- iter: 56780/56780
+--
+Training Step: 1776  | total loss: 0.31726
+Training Step: 1776  | total loss: 0.31726 0.8698 | val_loss: 0.26968 - val_acc:| Adam | epoch: 003 | loss: 0.31726 - acc: 0.8698 | val_loss: 0.26968 - val_acc: 0.8914 -- iter: 56780/56780
+--
+Training Step: 2368  | total loss: 0.29601
+Training Step: 2368  | total loss: 0.29601 0.8750 | val_loss: 0.29023 - val_acc:| Adam | epoch: 004 | loss: 0.29601 - acc: 0.8750 | val_loss: 0.29023 - val_acc: 0.8864 -- iter: 56780/56780
+--
+Training Step: 2960  | total loss: 0.29359
+Training Step: 2960  | total loss: 0.29359 0.8797 | val_loss: 0.22369 - val_acc:| Adam | epoch: 005 | loss: 0.29359 - acc: 0.8797 | val_loss: 0.22369 - val_acc: 0.9098 -- iter: 56780/56780
+--
+Training Step: 3552  | total loss: 0.28624
+Training Step: 3552  | total loss: 0.28624 0.8758 | val_loss: 0.22430 - val_acc:| Adam | epoch: 006 | loss: 0.28624 - acc: 0.8758 | val_loss: 0.22430 - val_acc: 0.9119 -- iter: 56780/56780
+--
+Training Step: 4144  | total loss: 0.27045
+Training Step: 4144  | total loss: 0.27045 0.8877 | val_loss: 0.22016 - val_acc:| Adam | epoch: 007 | loss: 0.27045 - acc: 0.8877 | val_loss: 0.22016 - val_acc: 0.9127 -- iter: 56780/56780
+--
+Training Step: 4736  | total loss: 0.27871
+Training Step: 4736  | total loss: 0.27871 0.8855 | val_loss: 0.21359 - val_acc:| Adam | epoch: 008 | loss: 0.27871 - acc: 0.8855 | val_loss: 0.21359 - val_acc: 0.9157 -- iter: 56780/56780
+--
+Training Step: 5328  | total loss: 0.28496
+Training Step: 5328  | total loss: 0.28496 0.8872 | val_loss: 0.21146 - val_acc:| Adam | epoch: 009 | loss: 0.28496 - acc: 0.8872 | val_loss: 0.21146 - val_acc: 0.9167 -- iter: 56780/56780
+--
+Training Step: 5920  | total loss: 0.26798
+Training Step: 5920  | total loss: 0.26798 0.8899 | val_loss: 0.20157 - val_acc:| Adam | epoch: 010 | loss: 0.26798 - acc: 0.8899 | val_loss: 0.20157 - val_acc: 0.9218 -- iter: 56780/56780
+--
+Training Step: 6512  | total loss: 0.25435
+Training Step: 6512  | total loss: 0.25435 0.8933 | val_loss: 0.26868 - val_acc:| Adam | epoch: 011 | loss: 0.25435 - acc: 0.8933 | val_loss: 0.26868 - val_acc: 0.8965 -- iter: 56780/56780
+--
+Training Step: 7104  | total loss: 0.27205
+Training Step: 7104  | total loss: 0.27205 0.8915 | val_loss: 0.23812 - val_acc:| Adam | epoch: 012 | loss: 0.27205 - acc: 0.8915 | val_loss: 0.23812 - val_acc: 0.9035 -- iter: 56780/56780
+--
+Training Step: 7696  | total loss: 0.25979
+Training Step: 7696  | total loss: 0.25979 0.8981 | val_loss: 0.25350 - val_acc:| Adam | epoch: 013 | loss: 0.25979 - acc: 0.8981 | val_loss: 0.25350 - val_acc: 0.8931 -- iter: 56780/56780
+--
+Training Step: 8288  | total loss: 0.25883
+Training Step: 8288  | total loss: 0.25883 0.9032 | val_loss: 0.19559 - val_acc:| Adam | epoch: 014 | loss: 0.25883 - acc: 0.9032 | val_loss: 0.19559 - val_acc: 0.9247 -- iter: 56780/56780
+--
+Training Step: 8880  | total loss: 0.30423
+Training Step: 8880  | total loss: 0.30423 0.8739 | val_loss: 0.22060 - val_acc:| Adam | epoch: 015 | loss: 0.30423 - acc: 0.8739 | val_loss: 0.22060 - val_acc: 0.9090 -- iter: 56780/56780
+--
+Training Step: 9472  | total loss: 0.25925
+Training Step: 9472  | total loss: 0.25925 0.9004 | val_loss: 0.18884 - val_acc:| Adam | epoch: 016 | loss: 0.25925 - acc: 0.9004 | val_loss: 0.18884 - val_acc: 0.9258 -- iter: 56780/56780
+--
+Training Step: 10064  | total loss: 0.26141
+Training Step: 10064  | total loss: 0.261410.8914 | val_loss: 0.19556 - val_acc:| Adam | epoch: 017 | loss: 0.26141 - acc: 0.8914 | val_loss: 0.19556 - val_acc: 0.9230 -- iter: 56780/56780
+--
+Training Step: 10656  | total loss: 0.24389
+Training Step: 10656  | total loss: 0.243890.8987 | val_loss: 0.20113 - val_acc:| Adam | epoch: 018 | loss: 0.24389 - acc: 0.8987 | val_loss: 0.20113 - val_acc: 0.9204 -- iter: 56780/56780
+--
+Training Step: 11248  | total loss: 0.25969
+Training Step: 11248  | total loss: 0.259690.8928 | val_loss: 0.19216 - val_acc:| Adam | epoch: 019 | loss: 0.25969 - acc: 0.8928 | val_loss: 0.19216 - val_acc: 0.9257 -- iter: 56780/56780
+--
+Training Step: 11840  | total loss: 0.26058
+Training Step: 11840  | total loss: 0.260580.8960 | val_loss: 0.18276 - val_acc:| Adam | epoch: 020 | loss: 0.26058 - acc: 0.8960 | val_loss: 0.18276 - val_acc: 0.9298 -- iter: 56780/56780
+--
+Training Step: 12432  | total loss: 0.28647
+Training Step: 12432  | total loss: 0.286470.8971 | val_loss: 0.20740 - val_acc:| Adam | epoch: 021 | loss: 0.28647 - acc: 0.8971 | val_loss: 0.20740 - val_acc: 0.9183 -- iter: 56780/56780
+--
+Training Step: 13024  | total loss: 0.26555
+Training Step: 13024  | total loss: 0.265550.9034 | val_loss: 0.19761 - val_acc:| Adam | epoch: 022 | loss: 0.26555 - acc: 0.9034 | val_loss: 0.19761 - val_acc: 0.9217 -- iter: 56780/56780
+--
+Training Step: 13616  | total loss: 0.28842
+Training Step: 13616  | total loss: 0.288420.8934 | val_loss: 0.19216 - val_acc:| Adam | epoch: 023 | loss: 0.28842 - acc: 0.8934 | val_loss: 0.19216 - val_acc: 0.9255 -- iter: 56780/56780
+--
+Training Step: 14208  | total loss: 0.24075
+Training Step: 14208  | total loss: 0.240750.8968 | val_loss: 0.18527 - val_acc:| Adam | epoch: 024 | loss: 0.24075 - acc: 0.8968 | val_loss: 0.18527 - val_acc: 0.9299 -- iter: 56780/56780
+--
+Training Step: 14800  | total loss: 0.25585
+Training Step: 14800  | total loss: 0.255850.9078 | val_loss: 0.20439 - val_acc:| Adam | epoch: 025 | loss: 0.25585 - acc: 0.9078 | val_loss: 0.20439 - val_acc: 0.9189 -- iter: 56780/56780
+--
+Training Step: 15392  | total loss: 0.25587
+Training Step: 15392  | total loss: 0.255870.9068 | val_loss: 0.18448 - val_acc:| Adam | epoch: 026 | loss: 0.25587 - acc: 0.9068 | val_loss: 0.18448 - val_acc: 0.9293 -- iter: 56780/56780
+--
+Training Step: 15984  | total loss: 0.29535
+Training Step: 15984  | total loss: 0.295350.8981 | val_loss: 0.17262 - val_acc:| Adam | epoch: 027 | loss: 0.29535 - acc: 0.8981 | val_loss: 0.17262 - val_acc: 0.9366 -- iter: 56780/56780
+--
+Training Step: 16576  | total loss: 0.28829
+Training Step: 16576  | total loss: 0.288290.8888 | val_loss: 0.17210 - val_acc:| Adam | epoch: 028 | loss: 0.28829 - acc: 0.8888 | val_loss: 0.17210 - val_acc: 0.9351 -- iter: 56780/56780
+--
+Training Step: 17168  | total loss: 0.30573
+Training Step: 17168  | total loss: 0.305730.9037 | val_loss: 0.17029 - val_acc:| Adam | epoch: 029 | loss: 0.30573 - acc: 0.9037 | val_loss: 0.17029 - val_acc: 0.9355 -- iter: 56780/56780
+--
+Training Step: 17760  | total loss: 0.23957
+Training Step: 17760  | total loss: 0.239570.9056 | val_loss: 0.18946 - val_acc:| Adam | epoch: 030 | loss: 0.23957 - acc: 0.9056 | val_loss: 0.18946 - val_acc: 0.9319 -- iter: 56780/56780
+--
+Training Step: 18352  | total loss: 0.35816
+Training Step: 18352  | total loss: 0.358160.8914 | val_loss: 0.22594 - val_acc:| Adam | epoch: 031 | loss: 0.35816 - acc: 0.8914 | val_loss: 0.22594 - val_acc: 0.9105 -- iter: 56780/56780
+--
+Training Step: 18944  | total loss: 0.31791
+Training Step: 18944  | total loss: 0.317910.9050 | val_loss: 0.16945 - val_acc:| Adam | epoch: 032 | loss: 0.31791 - acc: 0.9050 | val_loss: 0.16945 - val_acc: 0.9394 -- iter: 56780/56780
+--
+Training Step: 19536  | total loss: 0.22034
+Training Step: 19536  | total loss: 0.220340.9166 | val_loss: 0.16551 - val_acc:| Adam | epoch: 033 | loss: 0.22034 - acc: 0.9166 | val_loss: 0.16551 - val_acc: 0.9421 -- iter: 56780/56780
+--
+Training Step: 20128  | total loss: 0.22692
+Training Step: 20128  | total loss: 0.226920.9062 | val_loss: 0.18936 - val_acc:| Adam | epoch: 034 | loss: 0.22692 - acc: 0.9062 | val_loss: 0.18936 - val_acc: 0.9324 -- iter: 56780/56780
+--
+Training Step: 20720  | total loss: 0.22580
+Training Step: 20720  | total loss: 0.225800.9075 | val_loss: 0.16856 - val_acc:| Adam | epoch: 035 | loss: 0.22580 - acc: 0.9075 | val_loss: 0.16856 - val_acc: 0.9417 -- iter: 56780/56780
+--
+Training Step: 21312  | total loss: 0.19790
+Training Step: 21312  | total loss: 0.197900.9186 | val_loss: 0.16711 - val_acc:| Adam | epoch: 036 | loss: 0.19790 - acc: 0.9186 | val_loss: 0.16711 - val_acc: 0.9414 -- iter: 56780/56780
+--
+Training Step: 21904  | total loss: 0.23805
+Training Step: 21904  | total loss: 0.238050.8988 | val_loss: 0.18157 - val_acc:| Adam | epoch: 037 | loss: 0.23805 - acc: 0.8988 | val_loss: 0.18157 - val_acc: 0.9373 -- iter: 56780/56780
+--
+Training Step: 22496  | total loss: 0.22658
+Training Step: 22496  | total loss: 0.226580.8982 | val_loss: 0.17743 - val_acc:| Adam | epoch: 038 | loss: 0.22658 - acc: 0.8982 | val_loss: 0.17743 - val_acc: 0.9357 -- iter: 56780/56780
+--
+Training Step: 23088  | total loss: 0.19345
+Training Step: 23088  | total loss: 0.193450.9245 | val_loss: 0.19020 - val_acc:| Adam | epoch: 039 | loss: 0.19345 - acc: 0.9245 | val_loss: 0.19020 - val_acc: 0.9331 -- iter: 56780/56780
+--
+Training Step: 23680  | total loss: 0.21502
+| Adam | epoch: 040 | loss: 0.21502 - acc: 0.9067 | val_loss: 0.16844 - val_acc: 0.9421 -- iter: 56780/56780
+--
+Training Step: 24272  | total loss: 0.21860
+| Adam | epoch: 041 | loss: 0.21860 - acc: 0.9051 | val_loss: 0.18552 - val_acc: 0.9375 -- iter: 56780/56780
+--
+Training Step: 24864  | total loss: 0.19735
+| Adam | epoch: 042 | loss: 0.19735 - acc: 0.9183 | val_loss: 0.18457 - val_acc: 0.9397 -- iter: 56780/56780
+--
+Training Step: 25456  | total loss: 0.18917
+| Adam | epoch: 043 | loss: 0.18917 - acc: 0.9255 | val_loss: 0.17965 - val_acc: 0.9429 -- iter: 56780/56780
+--
+Training Step: 26048  | total loss: 0.21122
+| Adam | epoch: 044 | loss: 0.21122 - acc: 0.9108 | val_loss: 0.16750 - val_acc: 0.9401 -- iter: 56780/56780
+--
+Training Step: 26640  | total loss: 0.21100
+| Adam | epoch: 045 | loss: 0.21100 - acc: 0.9145 | val_loss: 0.18243 - val_acc: 0.9397 -- iter: 56780/56780
+--
+Training Step: 27232  | total loss: 0.19882
+| Adam | epoch: 046 | loss: 0.19882 - acc: 0.9168 | val_loss: 0.18682 - val_acc: 0.9377 -- iter: 56780/56780
+--
+Training Step: 27824  | total loss: 0.19903
+| Adam | epoch: 047 | loss: 0.19903 - acc: 0.9174 | val_loss: 0.16496 - val_acc: 0.9427 -- iter: 56780/56780
+--
+Training Step: 28416  | total loss: 0.19937
+| Adam | epoch: 048 | loss: 0.19937 - acc: 0.9195 | val_loss: 0.16131 - val_acc: 0.9441 -- iter: 56780/56780
+--
+Training Step: 29008  | total loss: 0.22173
+| Adam | epoch: 049 | loss: 0.22173 - acc: 0.9075 | val_loss: 0.16129 - val_acc: 0.9427 -- iter: 56780/56780
+--
+Training Step: 29600  | total loss: 0.22221
+| Adam | epoch: 050 | loss: 0.22221 - acc: 0.9048 | val_loss: 0.15211 - val_acc: 0.9479 -- iter: 56780/56780
+--
+Training Step: 30192  | total loss: 0.21695
+| Adam | epoch: 051 | loss: 0.21695 - acc: 0.9080 | val_loss: 0.18623 - val_acc: 0.9360 -- iter: 56780/56780
+--
+Training Step: 30784  | total loss: 0.19015
+Training Step: 30784  | total loss: 0.190150.9239 | val_loss: 0.19986 - val_acc:| Adam | epoch: 052 | loss: 0.19015 - acc: 0.9239 | val_loss: 0.19986 - val_acc: 0.9287 -- iter: 56780/56780
+--
+Training Step: 31376  | total loss: 0.19262
+Training Step: 31376  | total loss: 0.192620.9242 | val_loss: 0.17525 - val_acc:| Adam | epoch: 053 | loss: 0.19262 - acc: 0.9242 | val_loss: 0.17525 - val_acc: 0.9373 -- iter: 56780/56780
+--
+Training Step: 31968  | total loss: 0.21960
+Training Step: 31968  | total loss: 0.219600.9041 | val_loss: 0.19888 - val_acc:| Adam | epoch: 054 | loss: 0.21960 - acc: 0.9041 | val_loss: 0.19888 - val_acc: 0.9321 -- iter: 56780/56780
+--
+Training Step: 32560  | total loss: 0.20983
+Training Step: 32560  | total loss: 0.209830.9152 | val_loss: 0.19845 - val_acc:| Adam | epoch: 055 | loss: 0.20983 - acc: 0.9152 | val_loss: 0.19845 - val_acc: 0.9361 -- iter: 56780/56780
+--
+Training Step: 33152  | total loss: 0.20304
+Training Step: 33152  | total loss: 0.203040.9165 | val_loss: 0.17387 - val_acc:| Adam | epoch: 056 | loss: 0.20304 - acc: 0.9165 | val_loss: 0.17387 - val_acc: 0.9415 -- iter: 56780/56780
+--
+Training Step: 33744  | total loss: 0.18877
+Training Step: 33744  | total loss: 0.188770.9253 | val_loss: 0.16369 - val_acc:| Adam | epoch: 057 | loss: 0.18877 - acc: 0.9253 | val_loss: 0.16369 - val_acc: 0.9430 -- iter: 56780/56780
+--
+Training Step: 34336  | total loss: 0.18238
+Training Step: 34336  | total loss: 0.182380.9273 | val_loss: 0.18465 - val_acc:| Adam | epoch: 058 | loss: 0.18238 - acc: 0.9273 | val_loss: 0.18465 - val_acc: 0.9437 -- iter: 56780/56780
+--
+Training Step: 34928  | total loss: 0.19144
+| Adam | epoch: 059 | loss: 0.19144 - acc: 0.9174 | val_loss: 0.17494 - val_acc: 0.9430 -- iter: 56780/56780
+--
+Training Step: 35520  | total loss: 0.16925
+| Adam | epoch: 060 | loss: 0.16925 - acc: 0.9297 | val_loss: 0.21235 - val_acc: 0.9391 -- iter: 56780/56780
+--
+Training Step: 36112  | total loss: 0.19864
+| Adam | epoch: 061 | loss: 0.19864 - acc: 0.9183 | val_loss: 0.18529 - val_acc: 0.9393 -- iter: 56780/56780
+--
+Training Step: 36704  | total loss: 0.19457
+| Adam | epoch: 062 | loss: 0.19457 - acc: 0.9232 | val_loss: 0.16966 - val_acc: 0.9453 -- iter: 56780/56780
+--
+Training Step: 37296  | total loss: 0.19300
+| Adam | epoch: 063 | loss: 0.19300 - acc: 0.9197 | val_loss: 0.16332 - val_acc: 0.9483 -- iter: 56780/56780
+--
+Training Step: 37888  | total loss: 0.20821
+| Adam | epoch: 064 | loss: 0.20821 - acc: 0.9106 | val_loss: 0.17341 - val_acc: 0.9417 -- iter: 56780/56780
+--
+Training Step: 38480  | total loss: 0.19356
+| Adam | epoch: 065 | loss: 0.19356 - acc: 0.9190 | val_loss: 0.18933 - val_acc: 0.9419 -- iter: 56780/56780
+--
+Training Step: 39072  | total loss: 0.19404
+| Adam | epoch: 066 | loss: 0.19404 - acc: 0.9272 | val_loss: 0.18032 - val_acc: 0.9438 -- iter: 56780/56780
+--
+Training Step: 39664  | total loss: 0.17888
+| Adam | epoch: 067 | loss: 0.17888 - acc: 0.9272 | val_loss: 0.20475 - val_acc: 0.9403 -- iter: 56780/56780
+--
+Training Step: 40256  | total loss: 0.18304
+| Adam | epoch: 068 | loss: 0.18304 - acc: 0.9272 | val_loss: 0.18102 - val_acc: 0.9440 -- iter: 56780/56780
+--
+Training Step: 40848  | total loss: 0.18255
+| Adam | epoch: 069 | loss: 0.18255 - acc: 0.9248 | val_loss: 0.22662 - val_acc: 0.9315 -- iter: 56780/56780
+--
+Training Step: 41440  | total loss: 0.19636
+| Adam | epoch: 070 | loss: 0.19636 - acc: 0.9189 | val_loss: 0.16636 - val_acc: 0.9466 -- iter: 56780/56780
+--
+Training Step: 42032  | total loss: 0.17691
+| Adam | epoch: 071 | loss: 0.17691 - acc: 0.9305 | val_loss: 0.19884 - val_acc: 0.9361 -- iter: 56780/56780
+--
+Training Step: 42624  | total loss: 0.18607
+| Adam | epoch: 072 | loss: 0.18607 - acc: 0.9261 | val_loss: 0.16725 - val_acc: 0.9475 -- iter: 56780/56780
+--
+Training Step: 43216  | total loss: 0.18640
+| Adam | epoch: 073 | loss: 0.18640 - acc: 0.9230 | val_loss: 0.17132 - val_acc: 0.9460 -- iter: 56780/56780
+--
+Training Step: 43808  | total loss: 0.18542
+| Adam | epoch: 074 | loss: 0.18542 - acc: 0.9228 | val_loss: 0.17844 - val_acc: 0.9475 -- iter: 56780/56780
+--
+Training Step: 44400  | total loss: 0.18967
+| Adam | epoch: 075 | loss: 0.18967 - acc: 0.9217 | val_loss: 0.16904 - val_acc: 0.9455 -- iter: 56780/56780
+--
+Training Step: 44992  | total loss: 0.18014
+| Adam | epoch: 076 | loss: 0.18014 - acc: 0.9266 | val_loss: 0.18307 - val_acc: 0.9429 -- iter: 56780/56780
+--
+Training Step: 45584  | total loss: 0.18576
+| Adam | epoch: 077 | loss: 0.18576 - acc: 0.9217 | val_loss: 0.17810 - val_acc: 0.9430 -- iter: 56780/56780
+--
+Training Step: 46176  | total loss: 0.18355
+| Adam | epoch: 078 | loss: 0.18355 - acc: 0.9277 | val_loss: 0.20049 - val_acc: 0.9391 -- iter: 56780/56780
+--
+Training Step: 46768  | total loss: 0.19247
+| Adam | epoch: 079 | loss: 0.19247 - acc: 0.9299 | val_loss: 0.19136 - val_acc: 0.9377 -- iter: 56780/56780
+--
+Training Step: 47360  | total loss: 0.19537
+| Adam | epoch: 080 | loss: 0.19537 - acc: 0.9278 | val_loss: 0.20772 - val_acc: 0.9379 -- iter: 56780/56780
+--
+Training Step: 47952  | total loss: 0.17227
+| Adam | epoch: 081 | loss: 0.17227 - acc: 0.9260 | val_loss: 0.16629 - val_acc: 0.9484 -- iter: 56780/56780
+--
+Training Step: 48544  | total loss: 0.17877
+| Adam | epoch: 082 | loss: 0.17877 - acc: 0.9310 | val_loss: 0.17291 - val_acc: 0.9473 -- iter: 56780/56780
+--
+Training Step: 49136  | total loss: 0.16321
+| Adam | epoch: 083 | loss: 0.16321 - acc: 0.9301 | val_loss: 0.16241 - val_acc: 0.9493 -- iter: 56780/56780
+--
+Training Step: 49728  | total loss: 0.19044
+| Adam | epoch: 084 | loss: 0.19044 - acc: 0.9168 | val_loss: 0.16756 - val_acc: 0.9497 -- iter: 56780/56780
+--
+Training Step: 50320  | total loss: 0.18484
+| Adam | epoch: 085 | loss: 0.18484 - acc: 0.9271 | val_loss: 0.19556 - val_acc: 0.9377 -- iter: 56780/56780
+--
+Training Step: 50912  | total loss: 0.17896
+| Adam | epoch: 086 | loss: 0.17896 - acc: 0.9251 | val_loss: 0.18820 - val_acc: 0.9446 -- iter: 56780/56780
+--
+Training Step: 51504  | total loss: 0.18495
+| Adam | epoch: 087 | loss: 0.18495 - acc: 0.9235 | val_loss: 0.18020 - val_acc: 0.9435 -- iter: 56780/56780
+--
+Training Step: 52096  | total loss: 0.16440
+| Adam | epoch: 088 | loss: 0.16440 - acc: 0.9304 | val_loss: 0.18243 - val_acc: 0.9475 -- iter: 56780/56780
+--
+Training Step: 52688  | total loss: 0.18605
+| Adam | epoch: 089 | loss: 0.18605 - acc: 0.9226 | val_loss: 0.17383 - val_acc: 0.9459 -- iter: 56780/56780
+--
+Training Step: 53280  | total loss: 0.20312
+| Adam | epoch: 090 | loss: 0.20312 - acc: 0.9095 | val_loss: 0.19032 - val_acc: 0.9443 -- iter: 56780/56780
+--
+Training Step: 53872  | total loss: 0.17347
+| Adam | epoch: 091 | loss: 0.17347 - acc: 0.9298 | val_loss: 0.16607 - val_acc: 0.9498 -- iter: 56780/56780
+--
+Training Step: 54464  | total loss: 0.18900
+| Adam | epoch: 092 | loss: 0.18900 - acc: 0.9227 | val_loss: 0.18187 - val_acc: 0.9469 -- iter: 56780/56780
+--
+Training Step: 55056  | total loss: 0.18332
+| Adam | epoch: 093 | loss: 0.18332 - acc: 0.9243 | val_loss: 0.16732 - val_acc: 0.9486 -- iter: 56780/56780
+--
+Training Step: 55648  | total loss: 0.20259
+| Adam | epoch: 094 | loss: 0.20259 - acc: 0.9231 | val_loss: 0.17921 - val_acc: 0.9473 -- iter: 56780/56780
+--
+Training Step: 56240  | total loss: 0.17522
+| Adam | epoch: 095 | loss: 0.17522 - acc: 0.9320 | val_loss: 0.19085 - val_acc: 0.9449 -- iter: 56780/56780
+--
+Training Step: 56832  | total loss: 0.17612
+| Adam | epoch: 096 | loss: 0.17612 - acc: 0.9287 | val_loss: 0.21788 - val_acc: 0.9407 -- iter: 56780/56780
+--
+Training Step: 57424  | total loss: 0.18289
+| Adam | epoch: 097 | loss: 0.18289 - acc: 0.9257 | val_loss: 0.18653 - val_acc: 0.9449 -- iter: 56780/56780
+--
+Training Step: 58016  | total loss: 0.18253
+| Adam | epoch: 098 | loss: 0.18253 - acc: 0.9232 | val_loss: 0.17623 - val_acc: 0.9482 -- iter: 56780/56780
+--
+Training Step: 58608  | total loss: 0.17407
+| Adam | epoch: 099 | loss: 0.17407 - acc: 0.9307 | val_loss: 0.18390 - val_acc: 0.9440 -- iter: 56780/56780
+--
+Training Step: 59200  | total loss: 0.17279
+| Adam | epoch: 100 | loss: 0.17279 - acc: 0.9292 | val_loss: 0.18475 - val_acc: 0.9473 -- iter: 56780/56780
+--
+Network trained and saved as bird-classifier.tfl!
+robolab@robolab:~/Downloads/bird_classifier$ python
+Python 2.7.6 (default, Jun 22 2015, 17:58:13) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> 
+robolab@robolab:~/Downloads/bird_classifier$ for f in test_images/*.jpg; do echo "File: ${f}"; python2 infer.py ${f} 2>/dev/null; echo "";done
+\File: test_images/bird_african_fish_eagle.jpg
+That's a bird!
+
+File: test_images/bird_mount_bluebird.jpg
+That's a bird!
+
+File: test_images/not_a_bird_airplane.jpg
+That's not a bird!
+
+File: test_images/not_a_bird_creativecommons_logo.jpg
+That's not a bird!
+
+File: test_images/not_a_bird_stop_sign.jpg
+That's a bird!
+
+robolab@robolab:~/Downloads/bird_classifier$ \
